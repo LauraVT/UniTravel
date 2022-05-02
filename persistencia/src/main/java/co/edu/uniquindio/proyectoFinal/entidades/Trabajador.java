@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Setter
 @Getter
@@ -12,5 +13,6 @@ import java.io.Serializable;
 @MappedSuperclass
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Trabajador extends Persona implements Serializable {
+
 
 }

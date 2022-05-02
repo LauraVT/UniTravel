@@ -26,6 +26,6 @@ public class Categoria implements Serializable {
     @OneToOne(mappedBy = "categoria")
     private Descuento descuento;
 
- //  @OneToMany(mappedBy = "categoria")
- //   private List<Trabajador> trabajadores;
+  //  @OneToMany(mappedBy = "categoria")
+  //  private List<Trabajador> trabajadores;
 }
