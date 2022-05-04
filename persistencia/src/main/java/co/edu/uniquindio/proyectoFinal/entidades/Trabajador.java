@@ -11,8 +11,9 @@ import java.util.List;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 @MappedSuperclass
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Trabajador extends Persona implements Serializable {
 
-
+    @ManyToOne
+    private Categoria categoria;
 }

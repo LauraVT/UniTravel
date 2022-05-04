@@ -25,14 +25,17 @@ public class Reserva implements Serializable {
     @Future
     @EqualsAndHashCode.Include
     @Column(nullable = false)
+    @ToString.Include
     private LocalDate fechaReserva;
 
     @Future
     @Column(nullable = false)
+    @ToString.Include
     private LocalDate fechaInicio;
 
     @Future
     @Column(nullable = false)
+    @ToString.Include
     private LocalDate fechaFin;
 
     @EqualsAndHashCode.Include

@@ -23,9 +23,10 @@ public class Categoria implements Serializable {
     @Column(length = 20)
     private String tipo;
 
-    @OneToOne(mappedBy = "categoria")
+    @OneToOne
     private Descuento descuento;
 
-  //  @OneToMany(mappedBy = "categoria")
-  //  private List<Trabajador> trabajadores;
+    @OneToMany
+    private List<Administrador> administradores;
+
 }

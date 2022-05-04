@@ -23,9 +23,9 @@ public class Descuento implements Serializable {
     String estado;
 
     @Column(length = 15)
-    String valorDescontar;
+    double valorDescontar;
 
-    @OneToOne
+    @OneToOne(mappedBy = "descuento")
     private Categoria categoria;
 
     @ManyToOne
